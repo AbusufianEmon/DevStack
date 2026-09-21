@@ -4,6 +4,7 @@ export interface ITechType {
     category: string;
     description: string;
     icon: string;
+    iconColor: string;
     rating: number;
     difficulty: string;
     badge: string;

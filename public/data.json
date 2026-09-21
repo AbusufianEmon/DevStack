@@ -5,6 +5,7 @@
     "category": "Frontend",
     "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
     "icon": "https://icon.icepanel.io/Technology/svg/React.svg",
+    "iconColor": "#61DAFB",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
@@ -15,6 +16,7 @@
     "category": "Frontend",
     "description": "A React framework for building fast, scalable, and production-ready web applications.",
     "icon": "https://icon.icepanel.io/Technology/svg/Next.js.svg",
+    "iconColor": "#000000",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Fast"
@@ -25,6 +27,7 @@
     "category": "Backend",
     "description": "A JavaScript runtime that enables developers to build scalable server-side applications.",
     "icon": "https://icon.icepanel.io/Technology/svg/Node.js.svg",
+    "iconColor": "#339933",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Popular"
@@ -35,6 +38,7 @@
     "category": "Backend",
     "description": "A lightweight and flexible Node.js framework for building web servers and APIs.",
     "icon": "https://icon.icepanel.io/Technology/svg/Express.svg",
+    "iconColor": "#000000",
     "rating": 4.7,
     "difficulty": "Beginner-Friendly",
     "badge": "Essential"
@@ -45,6 +49,7 @@
     "category": "Database",
     "description": "A powerful, open-source object-relational database system with proven reliability.",
     "icon": "https://icon.icepanel.io/Technology/svg/PostgresSQL.svg",
+    "iconColor": "#4169E1",
     "rating": 4.9,
     "difficulty": "Intermediate",
     "badge": "Top SQL"
@@ -55,6 +60,7 @@
     "category": "Database",
     "description": "A flexible NoSQL database designed for modern applications and rapidly changing data.",
     "icon": "https://icon.icepanel.io/Technology/svg/MongoDB.svg",
+    "iconColor": "#47A248",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
@@ -65,6 +71,7 @@
     "category": "Language",
     "description": "A versatile programming language used to create dynamic and interactive web applications.",
     "icon": "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
+    "iconColor": "#F7DF1E",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Essential"
@@ -75,6 +82,7 @@
     "category": "Language",
     "description": "A strongly typed programming language that builds on JavaScript for more reliable applications.",
     "icon": "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
+    "iconColor": "#3178C6",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Popular"
@@ -85,6 +93,7 @@
     "category": "Language",
     "description": "A readable and versatile programming language widely used in web development, AI, and data science.",
     "icon": "https://icon.icepanel.io/Technology/svg/Python.svg",
+    "iconColor": "#3776AB",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
@@ -95,6 +104,7 @@
     "category": "Styling",
     "description": "A utility-first CSS framework for building modern and responsive user interfaces efficiently.",
     "icon": "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
+    "iconColor": "#06B6D4",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
     "badge": "Fast"
@@ -105,6 +115,7 @@
     "category": "Styling",
     "description": "A popular CSS framework providing responsive layouts and reusable interface components.",
     "icon": "https://icon.icepanel.io/Technology/svg/Bootstrap.svg",
+    "iconColor": "#7952B3",
     "rating": 4.6,
     "difficulty": "Beginner-Friendly",
     "badge": "Essential"
@@ -115,6 +126,7 @@
     "category": "DevOps",
     "description": "A platform for packaging applications and their dependencies into portable containers.",
     "icon": "https://icon.icepanel.io/Technology/svg/Docker.svg",
+    "iconColor": "#2496ED",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Containers"
@@ -125,6 +137,7 @@
     "category": "DevOps",
     "description": "An open-source platform for automating the deployment, scaling, and management of containers.",
     "icon": "https://icon.icepanel.io/Technology/svg/Kubernetes.svg",
+    "iconColor": "#326CE5",
     "rating": 4.7,
     "difficulty": "Advanced",
     "badge": "Containers"
@@ -135,6 +148,7 @@
     "category": "Tools",
     "description": "A distributed version control system for tracking changes and collaborating on software projects.",
     "icon": "https://icon.icepanel.io/Technology/svg/Git.svg",
+    "iconColor": "#F05032",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Essential"
@@ -145,6 +159,7 @@
     "category": "Tools",
     "description": "A developer platform for hosting code, collaborating with teams, and managing software projects.",
     "icon": "https://icon.icepanel.io/Technology/svg/GitHub.svg",
+    "iconColor": "#181717",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
