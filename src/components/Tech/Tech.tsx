@@ -1,13 +1,27 @@
-import React, { use } from "react";
+import React, { use, useState } from "react";
 import { Star } from 'lucide-react';
 import type { ITechType } from "../../types/techType";
+import EmptyStack from "./EmptyStack";
+import YourStack from "./YourStack";
 
 interface TechProps {
     techPromise: Promise<ITechType[]>;
 }
 
 const Tech = ({ techPromise }: TechProps) => {
+
     const techData = use(techPromise);
+
+
+    const [stack, setStack] = useState<ITechType[]>([]);
+
+    const handleAddToStack = (tech: ITechType) => {
+        setStack((prev) => {
+        
+        if (prev.some((t) => t.id === tech.id)) return prev;
+            return [...prev, tech];
+        });
+    };
 
     return (
         <div className="container mx-auto">
@@ -57,19 +71,19 @@ const Tech = ({ techPromise }: TechProps) => {
                                     </div>
                             </div>
 
-                            <button className="bg-linear-to-r from-orange-600 to-purple-600 text-white rounded-lg h-10">Add to Stack</button>
+                            <button
+
+                                className="bg-linear-to-r from-orange-600 to-purple-600 text-white rounded-lg h-10 hover:cursor-pointer hover:scale-101 transition-transform duration-300"
+                                onClick={() => handleAddToStack(tech)}
+                            >
+                                Add to Stack
+                            </button>
 
                         </div>
                     );
                 })}
                 </div>
-                <div className="card bg-base-100 border border-gray-300 container mx-auto rounded-2xl p-6 self-start sticky top-20">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-2">Your Stack</h2>
-                    <p className="text-slate-600 text-sm">No technologies selected yet.</p>
-                    <div className="border border-dotted border-gray-300 p-6 rounded-lg mt-4 text-center text-gray-500">
-                        Your stack is empty.
-                    </div>
-                </div>
+                { stack.length === 0 ? <EmptyStack techData={stack} /> : <YourStack techData={stack} /> }
             </div>
             
         </div>           
