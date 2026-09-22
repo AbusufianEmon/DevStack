@@ -1,6 +1,6 @@
 import React from 'react';
 
-const EmptyStack = ({ techData }: { techData: string }) => {
+const EmptyStack = () => {
     return (
         <div className="card bg-base-100 border border-gray-300 container mx-auto rounded-2xl p-6 self-start sticky top-20">
             <h2 className="text-2xl font-bold text-gray-900 mb-2">Your Stack</h2>
