@@ -51,8 +51,8 @@ const Tech = ({ techPromise }: TechProps) => {
                     Pick technologies to build your ideal development stack.
                 </p>
             </div>
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-[3fr_1fr] gap-4 mt-6 mx-2  sm:mx-auto">
-                <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4">
+            <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-[3fr_1fr] gap-4 mt-6 mx-2  sm:mx-auto">
+                <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {techData.map((tech: ITechType) => {
 
                         const isAdded = stack.some((t) => t.id === tech.id);
