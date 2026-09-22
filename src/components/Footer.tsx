@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="mb-20 mt-10">
             <hr className="border-t border-gray-300 mt-20 mb-10" />
             <div className="container mx-auto">
-                <div className="grid grid-cols-4 gap-8 justify-between items-center">
+                <div className=" grid grid-cols-1 lg:grid-cols-4 gap-8 justify-between items-center px-5 lg:px-2">
                     <div>
                         <img src={Logo} alt="Logo" className="h-8 w-auto" />
                         <p className="text-gray-600 text-sm mt-2">
@@ -50,8 +50,8 @@ const Footer = () => {
 
                 <hr className="border-t border-gray-300 mt-10 mb-10" />
                 
-                <div className="flex justify-between items-center">
-                    <p className="text-[10px] text-gray-600">
+                <div className="flex flex-col items-center gap-2 text-center md:flex-row md:justify-between md:text-left">
+                    <p className="text-[10px] text-gray-600 flex items-center">
                         <Copyright className="inline-block mr-2 h-4 w-4 object-contain"/> 2026 Dev Stack. All rights reserved.
                     </p>
                     <div className="flex gap-8 text-[10px] text-gray-600">

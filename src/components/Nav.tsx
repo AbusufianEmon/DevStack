@@ -1,3 +1,4 @@
+import { Menu } from "lucide-react";
 import Logo from "../assets/logo-text.png";
 const Nav = () => {
     return (
@@ -5,9 +6,11 @@ const Nav = () => {
             
             <div className="flex justify-between container mx-auto items-center">
 
+                <Menu className="md:hidden w-6 h-6 text-slate-800" />
+
                 <img src={Logo} alt="Logo" className="w-30 h-auto object-contain" />
 
-                <ul className="flex gap-8 items-center font-bold text-slate-600">
+                <ul className="hidden md:flex gap-8 items-center font-bold text-slate-600">
                     <li className="text-pink-500">Home</li>
                     <li>Technologies</li>
                     <li>Projects</li>
