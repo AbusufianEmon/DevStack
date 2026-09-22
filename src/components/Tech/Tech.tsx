@@ -1,5 +1,5 @@
-import React, { use, useState } from "react";
-import { Star } from 'lucide-react';
+import { use, useState } from "react";
+import { Check, Star } from 'lucide-react';
 import type { ITechType } from "../../types/techType";
 import EmptyStack from "./EmptyStack";
 import YourStack from "./YourStack";
@@ -42,16 +42,16 @@ const Tech = ({ techPromise }: TechProps) => {
 
     return (
         <div className="container mx-auto mb-20">
-            <div>
-                <h2 className="text-2xl font-bold text-gray-900">
+            <div className="mx-2 sm:mx-auto">
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-900">
                     Explore The
                     <span className="text-pink-500">Technologies</span>
                 </h2>
-                <p className="text-gray-500">
+                <p className="text-gray-500 text-sm md:text-base mt-2 ">
                     Pick technologies to build your ideal development stack.
                 </p>
             </div>
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-[3fr_1fr] gap-4 mt-6">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-[3fr_1fr] gap-4 mt-6 mx-2  sm:mx-auto">
                 <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4">
                     {techData.map((tech: ITechType) => {
 
@@ -76,7 +76,7 @@ const Tech = ({ techPromise }: TechProps) => {
                                 </div>
 
                                 <h2 className="card-title text-gray-900 font-bold py-3">{tech.name}</h2>
-                                <p className="text-slate-600 text-xs mt-1 mb-3">{tech.description}</p>
+                                <p className="text-slate-600 text-[10px] mt-1 mb-3">{tech.description}</p>
                                 <div className="flex justify-between items-center mt-2 mb-5">
                                         <div className="badge bg-gray-200">
                                             {tech.category}
@@ -92,13 +92,14 @@ const Tech = ({ techPromise }: TechProps) => {
 
                                 <button
 
-                                    className="bg-linear-to-r from-orange-600 to-purple-600 text-white rounded-lg h-10 hover:cursor-pointer hover:scale-101 transition-transform duration-300
+                                    className="bg-linear-to-r from-orange-600 to-purple-600 text-white rounded-lg h-10 
+                                    hover:cursor-pointer hover:scale-101 transition-transform duration-300 flex items-center justify-center gap-2
                                     disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100
                                     "
                                     onClick={() => handleAddToStack(tech)}
                                     disabled={isAdded}
                                 >
-                                    {isAdded ? 'Added to Stack' : 'Add to Stack'}
+                                    {isAdded ? (<><Check className="w-4 h-4" /> Added to Stack</>) : 'Add to Stack'}
                                 </button>
 
                             </div>

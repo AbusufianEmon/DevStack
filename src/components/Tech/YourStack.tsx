@@ -1,4 +1,3 @@
-import React from 'react';
 import { X } from 'lucide-react';
 import type { ITechType } from '../../types/techType';
 
@@ -29,7 +28,7 @@ const YourStack = ({ techData, onRemove, onRemoveAll }: YourStackProps) => {
                                 <div className="ml-auto flex items-center gap-2">
                                     <button 
                                         onClick={() => onRemove(tech)}
-                                        className="text-gray-500 hover:text-red-500 transition-colors duration-200">
+                                        className="text-gray-500 hover:text-red-500 hover:cursor-pointer transition-colors duration-200">
                                         <X className="w-5 h-5" />
                                     </button>
                                 </div>
@@ -40,7 +39,7 @@ const YourStack = ({ techData, onRemove, onRemoveAll }: YourStackProps) => {
 
                 <button
                     onClick={onRemoveAll}
-                    className="bg-linear-to-r from-orange-600 to-purple-600 text-white py-2 px-4 rounded-lg hover:cursor hover:scale-101 transition-colors duration-200 mt-4">
+                    className="bg-linear-to-r from-orange-600 to-purple-600 text-white py-2 px-4 rounded-lg hover:cursor-pointer hover:scale-101 transition-transform duration-200 mt-4">
                     Remove All
                 </button>
             </div>

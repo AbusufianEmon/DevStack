@@ -1,4 +1,3 @@
-import React from 'react';
 import Logo from "../assets/logo-text.png";
 import { Copyright } from 'lucide-react';
 
@@ -10,7 +9,7 @@ const Footer = () => {
         <div className="mb-20 mt-10">
             <hr className="border-t border-gray-300 mt-20 mb-10" />
             <div className="container mx-auto">
-                <div className=" grid grid-cols-1 lg:grid-cols-4 gap-8 justify-between items-center px-5 lg:px-2">
+                <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 items-start px-5 lg:px-2">
                     <div>
                         <img src={Logo} alt="Logo" className="h-8 w-auto" />
                         <p className="text-gray-600 text-sm mt-2">
