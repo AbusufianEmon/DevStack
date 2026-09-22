@@ -12,6 +12,8 @@ Technologies Used:
   3. Lucide React (icons)
   4. React Toastify (notifications)
   5. Vite
+
+
 Features:
   1. Browse and explore technologies - View a list of tools across categories (frontend, backend, database, styling, DevOps) with      details like difficulty level, rating,         and description.
   2. Build your own stack - Add technologies to a personal "Your Stack" panel with a single click, with duplicate-prevention and instant visual feedback (disabled button +      checkmark once added).
