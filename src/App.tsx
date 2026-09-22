@@ -4,6 +4,7 @@ import Banner from './components/Banner'
 import Nav from './components/Nav'
 import Tech from './components/Tech/Tech'
 import type { ITechType } from './types/techType'
+import Footer from './components/Footer'
 
 
 const techFetch = async(): Promise<ITechType[]> => {
@@ -26,6 +27,7 @@ function App() {
       <Suspense fallback={<div className="text-center text-gray-500">Loading...</div>}>
         <Tech techPromise={techPromise} />
       </Suspense>
+      <Footer></Footer>
 
     </>
   )

@@ -7,7 +7,9 @@ const Banner = () => {
         <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
           Build Your Ideal
           <br />
-          <span className="bg-linear-to-r from-orange-600 to-purple-600 bg-clip-text text-transparent">Development Stack</span>
+          <span className="bg-linear-to-r from-orange-600 to-purple-600 bg-clip-text text-transparent">
+            Development Stack
+          </span>
         </h2>
 
         <p className="mt-6 text-gray-500 text-lg leading-relaxed max-w-lg">
